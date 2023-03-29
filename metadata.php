@@ -24,6 +24,14 @@ $aModule = [
     'url'          => 'https://www.fatchip.de/',
     'email'        => 'marvin.poehls@fatchip.de',
     'extend'       => [],
-    'blocks' => [],
+    'blocks' => [
+        'template' => 'article_main.tpl',
+        'block' => 'admin_article_main_form',
+        'file' => 'views/blocks/admin/article_main__admin_article_main_form.tpl',
+
+    ],
     'settings' => [],
+    'events' => [
+        'onActivate' => 'marvin\PromotionPlaner\Core\Events\Setup::onActivate'
+    ]
 ];
