@@ -16,9 +16,14 @@ class Setup extends Base
 
     public static function addFields(){
         $db = DatabaseProvider::getDb();
-        $db->execute("ALTER TABLE oxarticles ADD FC_PROMOTIONPLANERURL VARCHAR(255) NULL;");
-        $db->execute("ALTER TABLE oxarticles ADD FC_PROMOTIONPLANERFROM VARCHAR(255) NULL;");
-        $db->execute("ALTER TABLE oxarticles ADD FC_PROMOTIONPLANERTO VARCHAR(255) NULL;");
+
+        $sql = "SHOW COLUMNS FROM oxarticles LIKE 'FC_PROMOTIONPLANER%'";
+
+        if (!$db->getOne($sql)) {
+            $db->execute("ALTER TABLE oxarticles ADD FC_PROMOTIONPLANERURL VARCHAR(255) NULL;");
+            $db->execute("ALTER TABLE oxarticles ADD FC_PROMOTIONPLANERFROM VARCHAR(255) NULL;");
+            $db->execute("ALTER TABLE oxarticles ADD FC_PROMOTIONPLANERTO VARCHAR(255) NULL;");
+        }
     }
 
     private static function _rebuildViews(){
