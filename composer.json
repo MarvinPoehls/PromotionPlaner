@@ -1,0 +1,21 @@
+{
+  "name": "marvin/promotionplaner",
+  "description": "Promotion-Planer with which you can create time-controlled advertising.",
+  "version": "1.0",
+  "type": "oxideshop-module",
+  "author": {
+    "name": "Marvin Poehls",
+    "email": "marvin.poehls@fatchip.de",
+    "homepage": "https://www.fatchip.de/"
+  },
+  "extra": {
+    "oxideshop": {
+      "target-directory": "marvin/PromotionPlaner"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "marvin\\PromotionPlaner\\": "../../../source/modules/marvin/PromotionPlaner"
+    }
+  }
+}
