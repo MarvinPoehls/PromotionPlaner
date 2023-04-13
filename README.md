@@ -2,9 +2,9 @@
 
 Installationsanleitung
 
-1.
-2.
-3.
+1. Setze einen Oxid eShop auf (wenn nicht schon vorhanden)
+2. Lade dir die Dateien aus diesem Repository runter
+3. Füge die Dateien unter your_project_name/source/modules ein (your_project_name = Der name des Ordners, unter dem der Shop gespeichert ist)
 
 Beschreibung
 
