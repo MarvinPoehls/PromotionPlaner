@@ -1,6 +1,6 @@
 <?php
 
-namespace marvin\PromotionPlaner\Core\Events;
+namespace MarvinPoehls\PromotionPlaner\Core\Events;
 
 use OxidEsales\Eshop\Core\Base;
 use OxidEsales\Eshop\Core\DatabaseProvider;

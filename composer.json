@@ -1,5 +1,5 @@
 {
-  "name": "marvin/promotionplaner",
+  "name": "marvinpoehls/promotionplaner",
   "description": "Promotion-Planer with which you can create time-controlled advertising.",
   "version": "1.0",
   "type": "oxideshop-module",
@@ -12,12 +12,12 @@
   ],
   "extra": {
     "oxideshop": {
-      "target-directory": "marvin/PromotionPlaner"
+      "target-directory": "MarvinPoehls/PromotionPlaner"
     }
   },
   "autoload": {
     "psr-4": {
-      "marvin\\PromotionPlaner\\": "../../../source/modules/marvin/PromotionPlaner"
+      "marvin\\PromotionPlaner\\": "../../../source/modules/MarvinPoehls/PromotionPlaner"
     }
   }
 }

@@ -1,11 +1,11 @@
 <?php
 
-namespace marvin\PromotionPlaner\Controller;
+namespace MarvinPoehls\PromotionPlaner\Controller;
 
 use OxidEsales\Eshop\Core\DatabaseProvider;
 
 if(false){
-    class_alias(\OxidEsales\Eshop\Application\Controller\Admin\ArticleMain::class, 'marvin\PromotionPlaner\Controller\ArticleMain_parent');
+    class_alias(\OxidEsales\Eshop\Application\Controller\Admin\ArticleMain::class, 'MarvinPoehls\PromotionPlaner\Controller\ArticleMain_parent');
 }
 
 class ArticleMain extends ArticleMain_parent

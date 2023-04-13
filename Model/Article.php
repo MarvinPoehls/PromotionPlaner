@@ -1,11 +1,11 @@
 <?php
 
-namespace marvin\PromotionPlaner\Model;
+namespace MarvinPoehls\PromotionPlaner\Model;
 
 use OxidEsales\Eshop\Core\Registry;
 
 if(false){
-    class_alias(\OxidEsales\Eshop\Application\Model\Article::class, 'marvin\PromotionPlaner\Model\Article_parent');
+    class_alias(\OxidEsales\Eshop\Application\Model\Article::class, 'MarvinPoehls\PromotionPlaner\Model\Article_parent');
 }
 
 class Article extends Article_parent

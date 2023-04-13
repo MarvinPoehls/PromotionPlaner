@@ -1,11 +1,11 @@
 <?php
 
-namespace marvin\PromotionPlaner\Model;
+namespace MarvinPoehls\PromotionPlaner\Model;
 
 use OxidEsales\Eshop\Core\Registry;
 
 if(false){
-    class_alias(\OxidEsales\Eshop\Application\Model\Manufacturer::class, 'marvin\PromotionPlaner\Model\Manufacturer_parent');
+    class_alias(\OxidEsales\Eshop\Application\Model\Manufacturer::class, 'MarvinPoehls\PromotionPlaner\Model\Manufacturer_parent');
 }
 
 class Manufacturer extends Manufacturer_parent

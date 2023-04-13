@@ -1,12 +1,12 @@
 <?php
 
-namespace marvin\PromotionPlaner\Controller;
+namespace MarvinPoehls\PromotionPlaner\Controller;
 
 use OxidEsales\Eshop\Application\Model\Manufacturer;
 use OxidEsales\Eshop\Core\DatabaseProvider;
 
 if(false){
-    class_alias(\OxidEsales\Eshop\Application\Controller\Admin\ManufacturerMain::class, 'marvin\PromotionPlaner\Controller\ManufacturerMain_parent');
+    class_alias(\OxidEsales\Eshop\Application\Controller\Admin\ManufacturerMain::class, 'MarvinPoehls\PromotionPlaner\Controller\ManufacturerMain_parent');
 }
 
 class ManufacturerMain extends ManufacturerMain_parent

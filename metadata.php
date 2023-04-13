@@ -24,12 +24,12 @@ $aModule = [
     'url'          => 'https://www.fatchip.de/',
     'email'        => 'marvin.poehls@fatchip.de',
     'extend'       => [
-        \OxidEsales\Eshop\Application\Model\Article::class => marvin\PromotionPlaner\Model\Article::class,
-        \OxidEsales\Eshop\Application\Controller\Admin\ArticleMain::class => marvin\PromotionPlaner\Controller\ArticleMain::class,
-        \OxidEsales\Eshop\Application\Model\Category::class => marvin\PromotionPlaner\Model\Category::class,
-        \OxidEsales\Eshop\Application\Controller\Admin\CategoryMain::class => marvin\PromotionPlaner\Controller\CategoryMain::class,
-        \OxidEsales\Eshop\Application\Model\Manufacturer::class => marvin\PromotionPlaner\Model\Manufacturer::class,
-        \OxidEsales\Eshop\Application\Controller\Admin\ManufacturerMain::class => marvin\PromotionPlaner\Controller\ManufacturerMain::class,
+        \OxidEsales\Eshop\Application\Model\Article::class => MarvinPoehls\PromotionPlaner\Model\Article::class,
+        \OxidEsales\Eshop\Application\Controller\Admin\ArticleMain::class => MarvinPoehls\PromotionPlaner\Controller\ArticleMain::class,
+        \OxidEsales\Eshop\Application\Model\Category::class => MarvinPoehls\PromotionPlaner\Model\Category::class,
+        \OxidEsales\Eshop\Application\Controller\Admin\CategoryMain::class => MarvinPoehls\PromotionPlaner\Controller\CategoryMain::class,
+        \OxidEsales\Eshop\Application\Model\Manufacturer::class => MarvinPoehls\PromotionPlaner\Model\Manufacturer::class,
+        \OxidEsales\Eshop\Application\Controller\Admin\ManufacturerMain::class => MarvinPoehls\PromotionPlaner\Controller\ManufacturerMain::class,
     ],
     'blocks' => [
         [
@@ -65,6 +65,6 @@ $aModule = [
     ],
     'settings' => [],
     'events' => [
-        'onActivate' => 'marvin\PromotionPlaner\Core\Events\Setup::onActivate',
+        'onActivate' => 'MarvinPoehls\PromotionPlaner\Core\Events\Setup::onActivate',
     ]
 ];
