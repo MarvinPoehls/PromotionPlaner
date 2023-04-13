@@ -1,4 +1,4 @@
-# oxidPromotionPlaner
+# Promotion-Planer
 
 Installationsanleitung
 
