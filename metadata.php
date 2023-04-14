@@ -65,6 +65,6 @@ $aModule = [
     ],
     'settings' => [],
     'events' => [
-        'onActivate' => 'MarvinPoehls\PromotionPlaner\Core\Events\Setup::onActivate',
+        'onActivate' => '\MarvinPoehls\PromotionPlaner\Core\Events\Setup::onActivate',
     ]
 ];

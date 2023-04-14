@@ -30,6 +30,6 @@ class Article extends Article_parent
     public function getBannerUrl(): string
     {
         $config = Registry::getConfig();
-        return $config->getShopUrl().'out/pictures/marvin/PromotionPlaner/images/article/'.$this->getFieldData('fc_promotionplanerurl');
+        return $config->getShopUrl().'out/pictures/MarvinPoehls/PromotionPlaner/images/article/'.$this->getFieldData('fc_promotionplanerurl');
     }
 }
