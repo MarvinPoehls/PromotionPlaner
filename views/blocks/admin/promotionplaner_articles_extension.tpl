@@ -9,7 +9,7 @@
                 [{$edit->oxarticles__fc_promotionplanerurl->value}]
             </div>
             <div style="display: inline">
-                <input type="file" class="editinput" accept="image/*" size="32" maxlength="[{$edit->oxarticles__fc_promotionplanerurl->fldmax_length}]" name="myfile[ABAN@oxarticles__fc_promotionplanerurl]" value="[{$edit->oxarticles__fc_promotionplanerurl->value}]" [{$readonly}]>
+                <input type="file" class="editinput" accept="image/*" size="32" maxlength="[{$edit->oxarticles__fc_promotionplanerurl->fldmax_length}]" name="myfile[FL@oxarticles__fc_promotionplanerurl]" value="[{$edit->oxarticles__fc_promotionplanerurl->value}]" [{$readonly}]>
                 [{oxinputhelp ident="HELP_FC_PROMOTIONPLANER_URL_ARTICLE"}]
             </div>
         </div>

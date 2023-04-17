@@ -30,6 +30,6 @@ class Manufacturer extends Manufacturer_parent
     public function getBannerUrl(): string
     {
         $config = Registry::getConfig();
-        return $config->getShopUrl().'out/pictures/MarvinPoehls/PromotionPlaner/images/manufacturer/'.$this->getFieldData('fc_promotionplanerurl');
+        return $config->getShopUrl().'out/pictures/media/'.$this->getFieldData('fc_promotionplanerurl');
     }
 }

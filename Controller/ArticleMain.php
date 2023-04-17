@@ -13,7 +13,7 @@ class ArticleMain extends ArticleMain_parent
     public function save(){
         parent::save();
 
-        $error = $_FILES['myfile']['error']['ABAN@oxarticles__fc_promotionplanerurl'];
+        $error = $_FILES['myfile']['error']['FL@oxarticles__fc_promotionplanerurl'];
 
         if($error == UPLOAD_ERR_OK){
             \OxidEsales\Eshop\Core\Registry::getUtilsFile()->processFiles($_FILES);
