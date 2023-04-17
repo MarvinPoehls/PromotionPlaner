@@ -17,7 +17,7 @@
   },
   "autoload": {
     "psr-4": {
-      "marvin\\PromotionPlaner\\": "../../../source/modules/MarvinPoehls/PromotionPlaner"
+      "MarvinPoehls\\PromotionPlaner\\": "../../../source/modules/MarvinPoehls/PromotionPlaner"
     }
   }
 }
