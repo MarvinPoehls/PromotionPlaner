@@ -30,6 +30,7 @@ $aModule = [
         \OxidEsales\Eshop\Application\Controller\Admin\CategoryMain::class => MarvinPoehls\PromotionPlaner\Controller\CategoryMain::class,
         \OxidEsales\Eshop\Application\Model\Manufacturer::class => MarvinPoehls\PromotionPlaner\Model\Manufacturer::class,
         \OxidEsales\Eshop\Application\Controller\Admin\ManufacturerMain::class => MarvinPoehls\PromotionPlaner\Controller\ManufacturerMain::class,
+        \OxidEsales\Eshop\Core\UtilsFile::class => MarvinPoehls\PromotionPlaner\Core\UtilsFile::class,
     ],
     'blocks' => [
         [

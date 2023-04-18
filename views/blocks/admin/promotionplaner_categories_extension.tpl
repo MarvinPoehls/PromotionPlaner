@@ -5,7 +5,7 @@
         [{oxmultilang ident="FC_PROMOTIONPLANER_URL"}]&nbsp;
     </td>
     <td class="edittext">
-        <input type="file" class="editinput" accept="image/*" size="32" maxlength="[{$edit->oxcategories__fc_promotionplanerurl->fldmax_length}]" name="myfile[FL@oxcategories__fc_promotionplanerurl]" value="[{$edit->oxcategories__fc_promotionplanerurl->value}]" [{$readonly}]>
+        <input type="file" class="editinput" accept="image/*" size="32" maxlength="[{$edit->oxcategories__fc_promotionplanerurl->fldmax_length}]" name="myfile[CBAN@oxcategories__fc_promotionplanerurl]" value="[{$edit->oxcategories__fc_promotionplanerurl->value}]" [{$readonly}]>
         [{oxinputhelp ident="HELP_FC_PROMOTIONPLANER_URL_CATEGORY"}]
     </td>
 </tr>
