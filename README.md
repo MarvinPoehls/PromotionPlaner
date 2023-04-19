@@ -1,15 +1,15 @@
 # Promotion-Planer
 
-Installationsanleitung
+Installation Guide
 
-1. Setze einen Oxid eShop auf (wenn nicht schon vorhanden)
-2. Öffne die PowerShell und navigiere zu dem Ordner, wo dein Shop gespeichert ist
-3. Führe den Befehl "composer require marvinpoehls/promotionplaner" aus
-4. Führe den Befehl "vendor/bin/oe-console oe:module:install-configuration source/modules/MarvinPoehls/PromotionPlaner" aus
-5. Führe den Befehl "vendor/bin/oe-console oe:module:apply-configuration" aus
-6. Nun kannst du das Modul "Promotion-Planer" im Admin deines Shops unter "Erweiterungen > Module" aktivieren
+1. Set up an Oxid eShop (if not already done).
+2. Open PowerShell and navigate to the base folder where your shop is located.
+3. Run the command "composer require marvinpoehls/promotionplaner".
+4. Run the command "vendor/bin/oe-console oe:module:install-configuration source/modules/MarvinPoehls/PromotionPlaner".
+5. Run the command "vendor/bin/oe-console oe:module:apply-configuration".
+6. Now you can activate the "Promotion-Planer" module in your shop's admin under "Extensions > Modules".
 
-Beschreibung
+Description
 
-Mit dem Promotion Planer Modul für deinen Oxid eShop kannst du im Admin Banner für Artikel, Kategorien oder Hersteller hochladen. Diese Werden dann im Shop auf der 
-jeweiligen Seite angezeigt. Die Banner sind zeitlich steuerbar.
+With the promotion planner module for your Oxid eShop you can upload banners for articles, categories or manufacturers in the admin. These are then in the shop on the
+respective page. The banners can be timed.
