@@ -28,12 +28,15 @@ class Setup extends Base
             $db->execute("ALTER TABLE oxarticles ADD FC_PROMOTIONPLANERURL VARCHAR(255) NULL;");
             $db->execute("ALTER TABLE oxarticles ADD FC_PROMOTIONPLANERFROM VARCHAR(255) NULL;");
             $db->execute("ALTER TABLE oxarticles ADD FC_PROMOTIONPLANERTO VARCHAR(255) NULL;");
+            $db->execute("ALTER TABLE oxarticles ADD FC_PROMOTIONPLANERACTIVE BOOLEAN NULL;");
             $db->execute("ALTER TABLE oxcategories ADD FC_PROMOTIONPLANERURL VARCHAR(255) NULL;");
             $db->execute("ALTER TABLE oxcategories ADD FC_PROMOTIONPLANERFROM VARCHAR(255) NULL;");
             $db->execute("ALTER TABLE oxcategories ADD FC_PROMOTIONPLANERTO VARCHAR(255) NULL;");
+            $db->execute("ALTER TABLE oxcategories ADD FC_PROMOTIONPLANERACTIVE BOOLEAN NULL;");
             $db->execute("ALTER TABLE oxmanufacturers ADD FC_PROMOTIONPLANERURL VARCHAR(255) NULL;");
             $db->execute("ALTER TABLE oxmanufacturers ADD FC_PROMOTIONPLANERFROM VARCHAR(255) NULL;");
             $db->execute("ALTER TABLE oxmanufacturers ADD FC_PROMOTIONPLANERTO VARCHAR(255) NULL;");
+            $db->execute("ALTER TABLE oxmanufacturers ADD FC_PROMOTIONPLANERACTIVE BOOLEAN NULL;");
         }
     }
 
@@ -46,12 +49,15 @@ class Setup extends Base
             $db->execute("ALTER TABLE oxarticles DROP COLUMN FC_PROMOTIONPLANERURL;");
             $db->execute("ALTER TABLE oxarticles DROP COLUMN FC_PROMOTIONPLANERFROM;");
             $db->execute("ALTER TABLE oxarticles DROP COLUMN FC_PROMOTIONPLANERTO;");
+            $db->execute("ALTER TABLE oxarticles DROP COLUMN FC_PROMOTIONPLANERACTIVE;");
             $db->execute("ALTER TABLE oxcategories DROP COLUMN FC_PROMOTIONPLANERURL;");
             $db->execute("ALTER TABLE oxcategories DROP COLUMN FC_PROMOTIONPLANERFROM;");
             $db->execute("ALTER TABLE oxcategories DROP COLUMN FC_PROMOTIONPLANERTO;");
+            $db->execute("ALTER TABLE oxcategories DROP COLUMN FC_PROMOTIONPLANERACTIVE;");
             $db->execute("ALTER TABLE oxmanufacturers DROP COLUMN FC_PROMOTIONPLANERURL;");
             $db->execute("ALTER TABLE oxmanufacturers DROP COLUMN FC_PROMOTIONPLANERFROM;");
             $db->execute("ALTER TABLE oxmanufacturers DROP COLUMN FC_PROMOTIONPLANERTO;");
+            $db->execute("ALTER TABLE oxmanufacturers DROP COLUMN FC_PROMOTIONPLANERACTIVE;");
         }
     }
 

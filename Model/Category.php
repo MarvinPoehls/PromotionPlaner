@@ -25,4 +25,8 @@ class Category extends Category_parent
         $promotionUrl = $this->getFieldData('fc_promotionplanerurl');
         return Promotion::getBannerImageDir().'category/'.$promotionUrl;
     }
+
+    public function isActive(){
+        return $this->getFieldData('fc_promotionplaneractive');
+    }
 }

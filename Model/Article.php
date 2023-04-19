@@ -25,4 +25,8 @@ class Article extends Article_parent
         $promotionUrl = $this->getFieldData('fc_promotionplanerurl');
         return Promotion::getBannerImageDir().'article/'.$promotionUrl;
     }
+
+    public function isActive(){
+        return $this->getFieldData('fc_promotionplaneractive');
+    }
 }

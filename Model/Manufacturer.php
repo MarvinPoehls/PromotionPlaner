@@ -25,4 +25,8 @@ class Manufacturer extends Manufacturer_parent
         $promotionUrl = $this->getFieldData('fc_promotionplanerurl');
         return Promotion::getBannerImageDir().'manufacturer/'.$promotionUrl;
     }
+
+    public function isActive(){
+        return $this->getFieldData('fc_promotionplaneractive');
+    }
 }

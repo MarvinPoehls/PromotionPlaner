@@ -1,12 +1,27 @@
 [{$smarty.block.parent}]
-
+<tr>
+    <td class="edittext">
+        [{oxmultilang ident="FC_PROMOTIONPLANER_ACTIVE"}]&nbsp;
+    </td>
+    <td class="edittext">
+        <input type="hidden" class="editinput" name="editval[oxcategories__fc_promotionplaneractive]" value="0" [{$readonly}]>
+        <input type="checkbox" class="editinput" name="editval[oxcategories__fc_promotionplaneractive]" value="1" [{if $edit->oxcategories__fc_promotionplaneractive->value == 1}]checked[{/if}] [{$readonly}]>
+    </td>
+</tr>
 <tr>
     <td class="edittext">
         [{oxmultilang ident="FC_PROMOTIONPLANER_URL"}]&nbsp;
     </td>
     <td class="edittext">
-        <input type="file" class="editinput" accept="image/*" size="32" maxlength="[{$edit->oxcategories__fc_promotionplanerurl->fldmax_length}]" name="myfile[CBAN@oxcategories__fc_promotionplanerurl]" value="[{$edit->oxcategories__fc_promotionplanerurl->value}]" [{$readonly}]>
-        [{oxinputhelp ident="HELP_FC_PROMOTIONPLANER_URL_CATEGORY"}]
+        <div>
+            <div style="display: inline">
+                [{$edit->oxcategories__fc_promotionplanerurl->value}]
+            </div>
+            <div style="display: inline">
+                <input type="file" class="editinput" accept="image/*" maxlength="[{$edit->oxcategories__fc_promotionplanerurl->fldmax_length}]" name="myfile[CBAN@oxcategories__fc_promotionplanerurl]" value="[{$edit->oxcategories__fc_promotionplanerurl->value}]" [{$readonly}]>
+                [{oxinputhelp ident="HELP_FC_PROMOTIONPLANER_URL_CATEGORY"}]
+            </div>
+        </div>
     </td>
 </tr>
 <tr>
