@@ -2,6 +2,7 @@
 
 namespace MarvinPoehls\PromotionPlaner\Model;
 
+use MarvinPoehls\PromotionPlaner\Core\Promotion;
 use OxidEsales\Eshop\Core\Registry;
 
 if(false){
@@ -16,20 +17,12 @@ class Category extends Category_parent
         $promotionTimeTo = $this->getFieldData('fc_promotionplanerto');
         $promotionUrl = $this->getFieldData('fc_promotionplanerurl');
 
-        if ($promotionTimeFrom != "" && $promotionTimeTo != "" && $promotionUrl != "") {
-            $promotionTimeFrom = strtotime($promotionTimeFrom);
-            $promotionTimeTo = strtotime($promotionTimeTo);
-
-            if($promotionTimeFrom <= time() && time() <= $promotionTimeTo){
-                return true;
-            }
-        }
-        return false;
+        return Promotion::isPromotionTime($promotionTimeFrom, $promotionTimeTo, $promotionUrl);
     }
 
     public function getBannerUrl(): string
     {
-        $config = Registry::getConfig();
-        return $config->getShopUrl().'out/pictures/MarvinPoehls/PromotionPlaner/images/category/'.$this->getFieldData('fc_promotionplanerurl');
+        $promotionUrl = $this->getFieldData('fc_promotionplanerurl');
+        return Promotion::getBannerImageDir().'category/'.$promotionUrl;
     }
 }
