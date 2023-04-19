@@ -1,15 +1,6 @@
 [{$smarty.block.parent}]
 <tr>
     <td class="edittext">
-        [{oxmultilang ident="FC_PROMOTIONPLANER_ACTIVE"}]&nbsp;
-    </td>
-    <td class="edittext">
-        <input type="hidden" class="editinput" name="editval[oxarticles__fc_promotionplaneractive]" value="0" [{$readonly}]>
-        <input type="checkbox" class="editinput" name="editval[oxarticles__fc_promotionplaneractive]" value="1" [{if $edit->oxarticles__fc_promotionplaneractive->value == 1}]checked[{/if}] [{$readonly}]>
-    </td>
-</tr>
-<tr>
-    <td class="edittext">
         [{oxmultilang ident="FC_PROMOTIONPLANER_URL"}]&nbsp;
     </td>
     <td class="edittext">
@@ -22,6 +13,15 @@
                 [{oxinputhelp ident="HELP_FC_PROMOTIONPLANER_URL_ARTICLE"}]
             </div>
         </div>
+    </td>
+</tr>
+<tr>
+    <td class="edittext">
+        [{oxmultilang ident="FC_PROMOTIONPLANER_ACTIVE"}]&nbsp;
+    </td>
+    <td class="edittext">
+        <input type="hidden" class="editinput" name="editval[oxarticles__fc_promotionplaneractive]" value="0" [{$readonly}]>
+        <input type="checkbox" class="editinput" name="editval[oxarticles__fc_promotionplaneractive]" value="1" [{if $edit->oxarticles__fc_promotionplaneractive->value == 1}]checked[{/if}] [{$readonly}]>
     </td>
 </tr>
 <tr>

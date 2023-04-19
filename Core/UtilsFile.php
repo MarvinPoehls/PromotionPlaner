@@ -13,9 +13,9 @@ class UtilsFile extends UtilsFile_parent
         parent::__construct();
 
         $this->_aTypeToPath += [
-            "ABAN" => "MarvinPoehls/PromotionPlaner/article",
-            "CBAN" => "MarvinPoehls/PromotionPlaner/category",
-            "MBAN" => "MarvinPoehls/PromotionPlaner/manufacturer",
+            "ABAN" => "MarvinPoehls/PromotionPlaner/images/article",
+            "CBAN" => "MarvinPoehls/PromotionPlaner/images/category",
+            "MBAN" => "MarvinPoehls/PromotionPlaner/images/manufacturer",
         ];
     }
 }
