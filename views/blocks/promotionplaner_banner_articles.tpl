@@ -1,7 +1,6 @@
-[{if $oDetailsProduct && $oDetailsProduct->isPromotionTime() && $oDetailsProduct->isActive()}]
+[{if $oDetailsProduct && $oDetailsProduct->mpIsPromotionTime() && $oDetailsProduct->mpIsActive()}]
 <div>
-    <img style="width: 100%; object-fit: cover; filter: blur(4px) brightness(80%); margin-bottom: 5%;" src="[{$oDetailsProduct->getBannerUrl()}]" height="65" alt="Promotion Banner">
-    <img style="width: 95%; object-fit: contain; position: absolute; left: 2.5%;" src="[{$oDetailsProduct->getBannerUrl()}]" height="65">
+    <img style="width: 100%; object-fit: contain; margin-bottom: 5%; background-color: #0d0d0d" src="[{$oDetailsProduct->mpGetBannerUrl()}]" height="65" alt="Promotion Banner">
 </div>
 [{/if}]
 

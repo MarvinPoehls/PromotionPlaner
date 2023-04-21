@@ -1,7 +1,10 @@
 [{$smarty.block.parent}]
 <tr>
+    <td><strong>Promotion-Planer</strong></td>
+</tr>
+<tr>
     <td class="edittext">
-        [{oxmultilang ident="FC_PROMOTIONPLANER_URL"}]&nbsp;
+        [{oxmultilang ident="FC_PROMOTIONPLANER_URL_CATEGORY"}]&nbsp;
     </td>
     <td class="edittext">
         <div>
@@ -13,6 +16,20 @@
                 [{oxinputhelp ident="HELP_FC_PROMOTIONPLANER_URL_CATEGORY"}]
             </div>
         </div>
+    </td>
+</tr>
+<tr>
+    <td class="edittext">
+        [{oxmultilang ident="FC_PROMOTIONPLANER_PREVIEW"}]&nbsp;
+    </td>
+    <td class="edittext">
+        [{if $edit->oxcategories__fc_promotionplanerurl->value}]
+    <img src="[{$edit->mpGetBannerUrl()}]" width="1140" height="100" style="object-fit: contain; background-color: #0d0d0d" alt="Preview">
+        [{else}]
+        <div style="width: 1140px; height: 100px; display: flex; justify-content: center; align-items: center; border: 1px solid black;">
+            <p>Preview</p>
+        </div>
+        [{/if}]
     </td>
 </tr>
 <tr>

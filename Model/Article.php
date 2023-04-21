@@ -11,7 +11,7 @@ if(false){
 
 class Article extends Article_parent
 {
-    public function isPromotionTime(): bool
+    public function mpIsPromotionTime(): bool
     {
         $promotionTimeFrom = $this->getFieldData('fc_promotionplanerfrom');
         $promotionTimeTo = $this->getFieldData('fc_promotionplanerto');
@@ -20,13 +20,13 @@ class Article extends Article_parent
         return Promotion::isPromotionTime($promotionTimeFrom, $promotionTimeTo, $promotionUrl);
     }
 
-    public function getBannerUrl(): string
+    public function mpGetBannerUrl(): string
     {
         $promotionUrl = $this->getFieldData('fc_promotionplanerurl');
         return Promotion::getBannerImageDir().'article/'.$promotionUrl;
     }
 
-    public function isActive(){
+    public function mpIsActive(){
         return $this->getFieldData('fc_promotionplaneractive');
     }
 }

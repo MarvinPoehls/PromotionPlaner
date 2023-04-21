@@ -1,6 +1,5 @@
-[{if $actCategory && $actCategory->isPromotionTime() && $actCategory->isActive() && $listType!='manufacturer'}]
-<img style="width: 100%; object-fit: cover; filter: blur(4px) brightness(80%);" src="[{$actCategory->getBannerUrl()}]" height="65" alt="Promotion Banner">
-<img style="width: 95%; object-fit: contain; position: absolute; left: 2.5%; top: 0" src="[{$actCategory->getBannerUrl()}]" height="65">
+[{if $actCategory && $actCategory->mpIsPromotionTime() && $actCategory->mpIsActive() && $listType!='manufacturer'}]
+<img style="width: 100%; object-fit: contain; background-color: #0d0d0d" src="[{$actCategory->mpGetBannerUrl()}]" height="100" alt="Promotion Banner">
 [{/if}]
 
 [{$smarty.block.parent}]

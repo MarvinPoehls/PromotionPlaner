@@ -4,7 +4,9 @@ $sLangName = 'English';
 
 $aLang = [
     'charset'   => 'UTF-8',
-    'FC_PROMOTIONPLANER_URL' => 'Banner',
+    'FC_PROMOTIONPLANER_URL' => 'Banner (555 x 65)',
+    'FC_PROMOTIONPLANER_URL_CATEGORY' => 'Banner (1140 x 100)',
+    'FC_PROMOTIONPLANER_PREVIEW' => 'Preview',
     'FC_PROMOTIONPLANER_ACTIVE' => 'Active',
     'HELP_FC_PROMOTIONPLANER_URL_ARTICLE' => 'Upload your banner here. This banner is displayed on the article page',
     'HELP_FC_PROMOTIONPLANER_URL_CATEGORY' => 'Upload your banner here. This banner is displayed on the category page',
